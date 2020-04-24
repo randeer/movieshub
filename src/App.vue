@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Header />
     <Navbar />
     <div id="nav">
       <router-link to="/">Home</router-link> |
@@ -13,11 +14,13 @@
 <script>
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
+import Header from '@/components/Header'
 export default {
   name: 'app',
   components: {
     Footer,
-    Navbar
+    Navbar,
+    Header
   }
   
 }

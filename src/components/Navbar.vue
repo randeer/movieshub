@@ -1,154 +1,33 @@
 <template>
-          <div class="wrapper">
-         <header>
-            <nav>
-               <div class="menu-icon">
-                  <i class="fa fa-bars fa-2x"></i>
-               </div>
-               <div class="logo">
-                  LOGO
-               </div>
-               <div class="menu">
-                  <ul>
-                     <li><a href="#">Home</a></li>
-                     <li><a href="#">About</a></li>
-                     <li><a href="#">Blog</a></li>
-                     <li><a href="#">Contact</a></li>
-                     <li><a href="#">Contact</a></li>
-                     <li><a href="#">Contact</a></li>
-                  </ul>
-               </div>
-            </nav>
-         </header>
-         
-      </div>
+  <div class="Navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <router-link to="/" class="nav-link">Home</router-link>
+      </li>
+      <li class="nav-item">
+        <router-link to="/about" class="nav-link">About</router-link>
+      </li>
+    </ul>
+  </div>
+</nav>
+  </div>
 </template>
 
 <script>
 export default {
   name: 'Navbar',
-  props: {
-    msg: String
+  data () {
+    return {
+      msg: 'Dilshani Dias'
+    }
   }
 }
 </script>
 
 <style scoped>
-html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-}
-
-body {
-      font-family: "Helvetica Neue",sans-serif;
-      font-weight: lighter;
-}
-
-header {
-      width: 100%;
-      height: 100vh;
-      background: url(https://wallpaper.wiki/wp-content/uploads/2017/05/wallpaper.wiki-Beautiful-Full-HD-Wallpaper-Download-Free-PIC-WPE0010098.jpg) no-repeat 50% 50%;
-      background-size: cover;
-}
-
-.content {
-      width: 94%;
-      margin: 4em auto;
-      font-size: 20px;
-      line-height: 30px;
-      text-align: justify;
-}
-
-.logo {
-      line-height: 60px;
-      position: fixed;
-      float: left;
-      margin: 16px 46px;
-      color: #fff;
-      font-weight: bold;
-      font-size: 20px;
-      letter-spacing: 2px;
-}
-
-nav {
-      position: fixed;
-      width: 100%;
-      line-height: 60px;
-}
-
-nav ul {
-      line-height: 60px;
-      list-style: none;
-      background: rgba(0, 0, 0, 0);
-      overflow: hidden;
-      color: #fff;
-      padding: 0;
-      text-align: right;
-      margin: 0;
-      padding-right: 40px;
-      transition: 1s;
-}
-
-nav.black ul {
-      background: #000;
-}
-
-nav ul li {
-      display: inline-block;
-      padding: 16px 40px;;
-}
-
-nav ul li a {
-      text-decoration: none;
-      color: #fff;
-      font-size: 16px;
-}
-
-.menu-icon {
-      line-height: 60px;
-      width: 100%;
-      background: #000;
-      text-align: right;
-      box-sizing: border-box;
-      padding: 15px 24px;
-      cursor: pointer;
-      color: #fff;
-      display: none;
-}
-
-@media(max-width: 786px) {
-
-      .logo {
-            position: fixed;
-            top: 0;
-            margin-top: 16px;
-      }
-
-      nav ul {
-            max-height: 0px;
-            background: #000;
-      }
-
-      nav.black ul {
-            background: #000;
-      }
-
-      .showing {
-            max-height: 34em;
-      }
-
-      nav ul li {
-            box-sizing: border-box;
-            width: 100%;
-            padding: 24px;
-            text-align: center;
-      }
-
-      .menu-icon {
-            display: block;
-      }
-
-}
-
 </style>
