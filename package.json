@@ -8,6 +8,10 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@algoz098/vue-player": "^0.4.3",
+    "@progress/kendo-mediaplayer-vue-wrapper": "^2020.1.423",
+    "@progress/kendo-theme-default": "^4.17.0",
+    "@progress/kendo-ui": "^2020.1.406",
     "core-js": "^3.6.4",
     "vue": "^2.6.11",
     "vue-router": "^3.1.6"
