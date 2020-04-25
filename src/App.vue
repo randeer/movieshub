@@ -2,6 +2,7 @@
   <div id="app">
     <Header />
     <Navbar />
+    <Searchbar />
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -15,12 +16,14 @@
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import Header from '@/components/Header'
+import Searchbar from '@/components/Searchbar'
 export default {
   name: 'app',
   components: {
     Footer,
     Navbar,
-    Header
+    Header,
+    Searchbar
   }
   
 }
