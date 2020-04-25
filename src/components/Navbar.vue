@@ -10,6 +10,18 @@
 					          <li class="nav-item"><router-link to="/" class="nav-link text-uppercase font-weight-bold">Home</router-link></li>
                     <li class="nav-item"><router-link to="/about" class="nav-link text-uppercase font-weight-bold">About</router-link></li>
 
+<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-uppercase font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item text-uppercase font-weight-bold" href="#">Action</a>
+          <a class="dropdown-item text-uppercase font-weight-bold" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item text-uppercase font-weight-bold" href="#">Something else here</a>
+        </div>
+      </li>
+
                 </ul>
             </div>
         </div>
